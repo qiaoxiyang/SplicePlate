@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570CC3D620BD2783000504D2 /* XYSplitImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570CC3D520BD2783000504D2 /* XYSplitImageModel.swift */; };
+		5719C6B620BE3C5F00AA6C23 /* XYImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5719C6B420BE3C5F00AA6C23 /* XYImageTableViewCell.swift */; };
+		5719C6B720BE3C5F00AA6C23 /* XYImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5719C6B520BE3C5F00AA6C23 /* XYImageTableViewCell.xib */; };
 		57840F9920B426150090A900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57840F9820B426150090A900 /* AppDelegate.swift */; };
 		57840F9B20B426150090A900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57840F9A20B426150090A900 /* ViewController.swift */; };
 		57840F9E20B426150090A900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57840F9C20B426150090A900 /* Main.storyboard */; };
@@ -14,6 +17,13 @@
 		57840FA320B426170090A900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57840FA120B426170090A900 /* LaunchScreen.storyboard */; };
 		57840FAE20B426170090A900 /* SplicePlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57840FAD20B426170090A900 /* SplicePlateTests.swift */; };
 		57840FB920B426180090A900 /* SplicePlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57840FB820B426180090A900 /* SplicePlateUITests.swift */; };
+		57B5D0AD20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5D0AB20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift */; };
+		57B5D0AE20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B5D0AC20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib */; };
+		57B5D0B020BBE15B0011DE66 /* XYSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5D0AF20BBE15B0011DE66 /* XYSplitViewController.swift */; };
+		57B5D0B320BBE2040011DE66 /* XYSplitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5D0B120BBE2040011DE66 /* XYSplitCollectionViewCell.swift */; };
+		57B5D0B420BBE2040011DE66 /* XYSplitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B5D0B220BBE2040011DE66 /* XYSplitCollectionViewCell.xib */; };
+		57B6F9E984B6089FC5E2CC89 /* Pods_SplicePlate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA22A7B4484843670304552 /* Pods_SplicePlate.framework */; };
+		57F1878220BD5D0A0057B817 /* XYPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1878120BD5D0A0057B817 /* XYPreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EA22A7B4484843670304552 /* Pods_SplicePlate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplicePlate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		570CC3D520BD2783000504D2 /* XYSplitImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYSplitImageModel.swift; sourceTree = "<group>"; };
+		5719C6B420BE3C5F00AA6C23 /* XYImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYImageTableViewCell.swift; sourceTree = "<group>"; };
+		5719C6B520BE3C5F00AA6C23 /* XYImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYImageTableViewCell.xib; sourceTree = "<group>"; };
 		57840F9520B426150090A900 /* SplicePlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplicePlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57840F9820B426150090A900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57840F9A20B426150090A900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,14 @@
 		57840FB420B426180090A900 /* SplicePlateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplicePlateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57840FB820B426180090A900 /* SplicePlateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplicePlateUITests.swift; sourceTree = "<group>"; };
 		57840FBA20B426180090A900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B5D0AB20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		57B5D0AC20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		57B5D0AF20BBE15B0011DE66 /* XYSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYSplitViewController.swift; sourceTree = "<group>"; };
+		57B5D0B120BBE2040011DE66 /* XYSplitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYSplitCollectionViewCell.swift; sourceTree = "<group>"; };
+		57B5D0B220BBE2040011DE66 /* XYSplitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYSplitCollectionViewCell.xib; sourceTree = "<group>"; };
+		57F1878120BD5D0A0057B817 /* XYPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYPreviewViewController.swift; sourceTree = "<group>"; };
+		8F6DBF70CF0DB74C03430AED /* Pods-SplicePlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplicePlate.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplicePlate/Pods-SplicePlate.release.xcconfig"; sourceTree = "<group>"; };
+		B1D14D2F499552F4EB534796 /* Pods-SplicePlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplicePlate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplicePlate/Pods-SplicePlate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B6F9E984B6089FC5E2CC89 /* Pods_SplicePlate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +97,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38EC9C16AF2E8D25B3D1F6D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EA22A7B4484843670304552 /* Pods_SplicePlate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		570CC3D220BD2730000504D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57B5D0AB20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift */,
+				57B5D0AC20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib */,
+				57B5D0B120BBE2040011DE66 /* XYSplitCollectionViewCell.swift */,
+				57B5D0B220BBE2040011DE66 /* XYSplitCollectionViewCell.xib */,
+				5719C6B420BE3C5F00AA6C23 /* XYImageTableViewCell.swift */,
+				5719C6B520BE3C5F00AA6C23 /* XYImageTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		570CC3D320BD2736000504D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57840F9A20B426150090A900 /* ViewController.swift */,
+				57B5D0AF20BBE15B0011DE66 /* XYSplitViewController.swift */,
+				57F1878120BD5D0A0057B817 /* XYPreviewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		570CC3D420BD273D000504D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				570CC3D520BD2783000504D2 /* XYSplitImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		57840F8C20B426150090A900 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +143,8 @@
 				57840FAC20B426170090A900 /* SplicePlateTests */,
 				57840FB720B426180090A900 /* SplicePlateUITests */,
 				57840F9620B426150090A900 /* Products */,
+				82FEC595056CB45D0CDF26CB /* Pods */,
+				38EC9C16AF2E8D25B3D1F6D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +161,10 @@
 		57840F9720B426150090A900 /* SplicePlate */ = {
 			isa = PBXGroup;
 			children = (
+				570CC3D220BD2730000504D2 /* View */,
+				570CC3D420BD273D000504D2 /* Model */,
+				570CC3D320BD2736000504D2 /* Controller */,
 				57840F9820B426150090A900 /* AppDelegate.swift */,
-				57840F9A20B426150090A900 /* ViewController.swift */,
 				57840F9C20B426150090A900 /* Main.storyboard */,
 				57840F9F20B426170090A900 /* Assets.xcassets */,
 				57840FA120B426170090A900 /* LaunchScreen.storyboard */,
@@ -125,6 +191,15 @@
 			path = SplicePlateUITests;
 			sourceTree = "<group>";
 		};
+		82FEC595056CB45D0CDF26CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1D14D2F499552F4EB534796 /* Pods-SplicePlate.debug.xcconfig */,
+				8F6DBF70CF0DB74C03430AED /* Pods-SplicePlate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57840FBD20B426180090A900 /* Build configuration list for PBXNativeTarget "SplicePlate" */;
 			buildPhases = (
+				9A65005D7FDF00949344AE31 /* [CP] Check Pods Manifest.lock */,
 				57840F9120B426150090A900 /* Sources */,
 				57840F9220B426150090A900 /* Frameworks */,
 				57840F9320B426150090A900 /* Resources */,
+				31C9347D15FD310F0D416A79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,8 +306,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B5D0B420BBE2040011DE66 /* XYSplitCollectionViewCell.xib in Resources */,
+				57B5D0AE20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib in Resources */,
 				57840FA320B426170090A900 /* LaunchScreen.storyboard in Resources */,
 				57840FA020B426170090A900 /* Assets.xcassets in Resources */,
+				5719C6B720BE3C5F00AA6C23 /* XYImageTableViewCell.xib in Resources */,
 				57840F9E20B426150090A900 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,12 +331,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31C9347D15FD310F0D416A79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SplicePlate/Pods-SplicePlate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplicePlate/Pods-SplicePlate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A65005D7FDF00949344AE31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplicePlate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		57840F9120B426150090A900 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				57840F9B20B426150090A900 /* ViewController.swift in Sources */,
+				570CC3D620BD2783000504D2 /* XYSplitImageModel.swift in Sources */,
+				57B5D0B320BBE2040011DE66 /* XYSplitCollectionViewCell.swift in Sources */,
+				57F1878220BD5D0A0057B817 /* XYPreviewViewController.swift in Sources */,
+				5719C6B620BE3C5F00AA6C23 /* XYImageTableViewCell.swift in Sources */,
+				57B5D0AD20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift in Sources */,
+				57B5D0B020BBE15B0011DE66 /* XYSplitViewController.swift in Sources */,
 				57840F9920B426150090A900 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +557,13 @@
 		};
 		57840FBE20B426180090A900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D14D2F499552F4EB534796 /* Pods-SplicePlate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MZD3465LC;
 				INFOPLIST_FILE = SplicePlate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +577,13 @@
 		};
 		57840FBF20B426180090A900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6DBF70CF0DB74C03430AED /* Pods-SplicePlate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MZD3465LC;
 				INFOPLIST_FILE = SplicePlate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

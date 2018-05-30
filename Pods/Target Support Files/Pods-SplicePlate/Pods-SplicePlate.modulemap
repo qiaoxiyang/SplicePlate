@@ -1,0 +1,6 @@
+framework module Pods_SplicePlate {
+  umbrella header "Pods-SplicePlate-umbrella.h"
+
+  export *
+  module * { export * }
+}
