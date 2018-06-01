@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E087724C7CBE8036104CCCB01C2A092"
+               BlueprintIdentifier = "603ACD532033376F5D55E3A83B9F6BDF"
                BuildableName = "Pods_SplicePlate.framework"
                BlueprintName = "Pods-SplicePlate"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1E087724C7CBE8036104CCCB01C2A092"
+            BlueprintIdentifier = "603ACD532033376F5D55E3A83B9F6BDF"
             BuildableName = "Pods_SplicePlate.framework"
             BlueprintName = "Pods-SplicePlate"
             ReferencedContainer = "container:Pods.xcodeproj">

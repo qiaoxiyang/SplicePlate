@@ -20,27 +20,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择需要切成九宫格的图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvD-cS-QGx">
-                                <rect key="frame" x="83.5" y="84" width="208" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="15" y="84" width="184" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BD-IT-HOl">
-                                <rect key="frame" x="137.5" y="115" width="100" height="40"/>
-                                <color key="backgroundColor" red="0.50588235290000005" green="0.73725490199999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="VXX-pq-o70"/>
-                                    <constraint firstAttribute="height" constant="40" id="rWF-Kh-4Bk"/>
-                                </constraints>
-                                <state key="normal" title="选择">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="pickerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoX-OR-4wm"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="icT-Y4-3Vi">
-                                <rect key="frame" x="30" y="170" width="315" height="315"/>
+                                <rect key="frame" x="30" y="128.5" width="315" height="315"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="icT-Y4-3Vi" secondAttribute="height" multiplier="1:1" id="u7O-aM-hDb"/>
@@ -54,14 +40,17 @@
                                 <cells/>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择需要拼接的图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axV-5x-vBf">
-                                <rect key="frame" x="30" y="500" width="147" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="15" y="473.5" width="138" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dib-Cu-Jok">
-                                <rect key="frame" x="15" y="540" width="345" height="117"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="15" y="508" width="345" height="100"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hYe-9u-t1b"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="av0-dO-km3">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -71,35 +60,49 @@
                                 <cells/>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqk-Ht-NBo">
-                                <rect key="frame" x="187" y="490" width="100" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.60117723374342558" blue="0.017861711697106486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="209" y="468" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="QNX-Fv-Vnq"/>
-                                    <constraint firstAttribute="height" constant="40" id="XbQ-JH-w4v"/>
+                                    <constraint firstAttribute="width" constant="30" id="QNX-Fv-Vnq"/>
+                                    <constraint firstAttribute="height" constant="30" id="XbQ-JH-w4v"/>
                                 </constraints>
-                                <state key="normal" title="选择"/>
+                                <state key="normal" image="sliptAdd"/>
                                 <connections>
                                     <action selector="pickeSplitPhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uvo-m7-Hbf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BD-IT-HOl">
+                                <rect key="frame" x="209" y="78.5" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TnB-Cj-izD"/>
+                                    <constraint firstAttribute="width" constant="30" id="XnD-Fr-sK8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" image="nineAdd">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoX-OR-4wm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="axV-5x-vBf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="CK8-gl-98Y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dib-Cu-Jok" secondAttribute="bottom" constant="10" id="Jzv-HI-CAx"/>
+                            <constraint firstItem="axV-5x-vBf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="CK8-gl-98Y"/>
+                            <constraint firstItem="DvD-cS-QGx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="FFa-Si-zZ9"/>
+                            <constraint firstItem="6BD-IT-HOl" firstAttribute="leading" secondItem="DvD-cS-QGx" secondAttribute="trailing" constant="10" id="Gch-iT-v6o"/>
+                            <constraint firstItem="Bqk-Ht-NBo" firstAttribute="trailing" secondItem="6BD-IT-HOl" secondAttribute="trailing" id="HPE-Xf-sGg"/>
                             <constraint firstItem="dib-Cu-Jok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="L41-RM-x7g"/>
                             <constraint firstItem="icT-Y4-3Vi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="N4e-Tc-bjG"/>
-                            <constraint firstItem="6BD-IT-HOl" firstAttribute="top" secondItem="DvD-cS-QGx" secondAttribute="bottom" constant="10" id="Pzq-zR-zpU"/>
-                            <constraint firstItem="axV-5x-vBf" firstAttribute="top" secondItem="icT-Y4-3Vi" secondAttribute="bottom" constant="15" id="UjP-Z1-SVl"/>
-                            <constraint firstItem="DvD-cS-QGx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WCV-QW-00x"/>
+                            <constraint firstItem="axV-5x-vBf" firstAttribute="top" secondItem="icT-Y4-3Vi" secondAttribute="bottom" constant="30" id="O1v-Ln-sB5"/>
+                            <constraint firstItem="6BD-IT-HOl" firstAttribute="centerY" secondItem="DvD-cS-QGx" secondAttribute="centerY" id="SIp-Xi-3GD"/>
+                            <constraint firstItem="icT-Y4-3Vi" firstAttribute="top" secondItem="6BD-IT-HOl" secondAttribute="bottom" constant="20" id="ZlR-7x-zC5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="icT-Y4-3Vi" secondAttribute="trailing" constant="30" id="aEy-0S-ZHb"/>
                             <constraint firstItem="Bqk-Ht-NBo" firstAttribute="centerY" secondItem="axV-5x-vBf" secondAttribute="centerY" id="bYU-sS-xUh"/>
                             <constraint firstItem="DvD-cS-QGx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ds1-mS-qWD"/>
-                            <constraint firstItem="icT-Y4-3Vi" firstAttribute="top" secondItem="6BD-IT-HOl" secondAttribute="bottom" constant="15" id="k3z-0a-Cwe"/>
-                            <constraint firstItem="6BD-IT-HOl" firstAttribute="centerX" secondItem="DvD-cS-QGx" secondAttribute="centerX" id="qT4-ID-E4B"/>
                             <constraint firstItem="dib-Cu-Jok" firstAttribute="top" secondItem="Bqk-Ht-NBo" secondAttribute="bottom" constant="10" id="voW-35-eNX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dib-Cu-Jok" secondAttribute="trailing" constant="15" id="zF7-gn-BhU"/>
-                            <constraint firstItem="Bqk-Ht-NBo" firstAttribute="leading" secondItem="axV-5x-vBf" secondAttribute="trailing" constant="10" id="zjo-lb-L54"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -115,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="-564.46776611694156"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation View Controller-->
         <scene sceneID="jmQ-Op-xnx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b3i-kx-Of4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b3i-kx-Of4" customClass="XYBaseNavigationViewController" customModule="SplicePlate" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vxz-il-s2v">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -131,7 +134,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfg-yl-Vbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="-564.46776611694156"/>
+            <point key="canvasLocation" x="383" y="-564"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nineAdd" width="49" height="49"/>
+        <image name="sliptAdd" width="49" height="49"/>
+    </resources>
 </document>

@@ -50,8 +50,9 @@ class XYPreviewViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.contentScrollView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)
         }
+        let screenWidth = UIScreen.main.bounds.size.width
         
-        let contentW = self.view.tz_width * 9
+        let contentW = screenWidth * 9
         self.contentScrollView.contentSize = CGSize(width: contentW, height: 0)
         self.contentScrollView.isPagingEnabled = true
         self.contentScrollView.tag = 100
@@ -59,8 +60,8 @@ class XYPreviewViewController: UIViewController,UITableViewDelegate,UITableViewD
         for index in 0..<9 {
             let tableView = UITableView()
             tableView.tag = index
-            let width = self.view.tz_width
-            let height = self.view.tz_height
+            let width = screenWidth
+            let height = self.view.bounds.size.height
             let x = CGFloat(index) * width
             tableView.delegate = self
             tableView.dataSource = self
@@ -192,7 +193,7 @@ class XYPreviewViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         if scrollView.tag == 100 {
             
-            let index = ceil(scrollView.contentOffset.x / self.view.tz_width)
+            let index = ceil(scrollView.contentOffset.x / self.view.bounds.size.width)
             self.title = "预览\(Int(index) + 1)"
         }
         

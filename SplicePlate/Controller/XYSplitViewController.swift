@@ -9,9 +9,10 @@
 import UIKit
 import SVProgressHUD
 import SnapKit
-import TZImagePickerController
+import ZLPhotoBrowser
+
 protocol XYSplitViewControllerDelegate {
-    func done(images:[XYSplitImageModel],horizonal:[XYSplitImageModel],vertical:[XYSplitImageModel],assets:[Any]?)
+    func done(images:[XYSplitImageModel],horizonal:[XYSplitImageModel],vertical:[XYSplitImageModel],assets:[PHAsset]?)
 }
 
 class XYSplitViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
@@ -20,7 +21,7 @@ class XYSplitViewController: UIViewController,UICollectionViewDelegate,UICollect
     var dataSource = [XYSplitImageModel]()
     private let cellId = "XYSplitCollectionViewCell"
     private let infoLabel = UILabel()
-    var asset :[Any]?
+    var asset :[PHAsset]?
     var delegate :XYSplitViewControllerDelegate?
     
     override func viewDidLoad() {
@@ -40,7 +41,7 @@ class XYSplitViewController: UIViewController,UICollectionViewDelegate,UICollect
         let flowLayout = UICollectionViewFlowLayout()
         let leftMargin:CGFloat = 15
         let margin:CGFloat = 2
-        let allWidth = self.view.tz_width - 2 * leftMargin - 3 * margin
+        let allWidth = self.view.bounds.size.width - 2 * leftMargin - 3 * margin
         let width = allWidth / 4.0
         let height = width
         flowLayout.itemSize = CGSize.init(width: width, height: height)
@@ -63,12 +64,19 @@ class XYSplitViewController: UIViewController,UICollectionViewDelegate,UICollect
             make.bottom.equalTo(self.view.snp.bottom).offset(-20)
             make.centerX.equalTo(self.view)
         }
+ 
         _ = configureInfoData()
-        infoLabel.textColor = UIColor.red
+        
         
     }
 
     func configureInfoData()->(Array<XYSplitImageModel>,Array<XYSplitImageModel>) {
+        
+        if self.dataSource.count == 0 {
+            infoLabel.textColor = UIColor.red
+            infoLabel.text = "总数量：0  横图数量：0  竖图数量：0"
+            return (Array<XYSplitImageModel>(),Array<XYSplitImageModel>())
+        }
         
         let verticalArray = self.dataSource.filter({$0.isVertical!})
         
@@ -147,13 +155,39 @@ class XYSplitViewController: UIViewController,UICollectionViewDelegate,UICollect
     func takeSliptPhoto() {
         
         
-        let pickerVC = TZImagePickerController(maxImagesCount: 72, columnNumber: 4, delegate: self)
-        pickerVC?.allowPickingVideo = false
-        if let asset = self.asset  {
-            pickerVC?.selectedAssets = NSMutableArray(array: asset)
+        let actionSheet = ZLPhotoActionSheet()
+        actionSheet.configuration.allowSelectVideo = false
+        actionSheet.configuration.allowSelectImage = true
+        actionSheet.configuration.allowEditImage = false
+        actionSheet.configuration.showCaptureImageOnTakePhotoBtn = false
+        actionSheet.configuration.maxSelectCount = 72
+        actionSheet.sender = self
+        if let assets = asset {
+             actionSheet.arrSelectedAssets = NSMutableArray(array: assets)
+        }
+       
+        actionSheet.selectImageBlock = { [weak self](images,assets,isOriginal) in
+            self?.asset = assets
+        
+            let modelArray = images?.map({XYSplitImageModel(image: $0)})
+            self?.dataSource = modelArray!
+            self?.collectionView.reloadData()
+            _ = self?.configureInfoData()
+        
         }
         
-        self.present(pickerVC!, animated: true, completion: nil)
+        actionSheet.cancleBlock = {
+            print("取消选择图片")
+        }
+        actionSheet.showPhotoLibrary()
+        
+//        let pickerVC = TZImagePickerController(maxImagesCount: 72, columnNumber: 4, delegate: self)
+//        pickerVC?.allowPickingVideo = false
+//        if let asset = self.asset  {
+//            pickerVC?.selectedAssets = NSMutableArray(array: asset)
+//        }
+//
+//        self.present(pickerVC!, animated: true, completion: nil)
     }
     
     
@@ -198,18 +232,4 @@ class XYSplitViewController: UIViewController,UICollectionViewDelegate,UICollect
    
 }
 
-extension XYSplitViewController:TZImagePickerControllerDelegate{
-    
-    func imagePickerController(_ picker: TZImagePickerController!, didFinishPickingPhotos photos: [UIImage]!, sourceAssets assets: [Any]!, isSelectOriginalPhoto: Bool) {
-        
-        self.asset = assets
-        let modelArray = photos.map({XYSplitImageModel(image: $0)})
-      
-        self.dataSource = modelArray
-            self.collectionView.reloadData()
-        _ = self.configureInfoData()
-        
-    }
-    
-}
 

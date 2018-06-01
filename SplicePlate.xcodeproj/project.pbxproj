@@ -17,6 +17,8 @@
 		57840FA320B426170090A900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57840FA120B426170090A900 /* LaunchScreen.storyboard */; };
 		57840FAE20B426170090A900 /* SplicePlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57840FAD20B426170090A900 /* SplicePlateTests.swift */; };
 		57840FB920B426180090A900 /* SplicePlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57840FB820B426180090A900 /* SplicePlateUITests.swift */; };
+		57B200B920C0E6A100F00DEE /* XYBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B200B820C0E6A100F00DEE /* XYBaseNavigationViewController.swift */; };
+		57B200BB20C0E70700F00DEE /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B200BA20C0E70700F00DEE /* UIImageExtension.swift */; };
 		57B5D0AD20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5D0AB20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift */; };
 		57B5D0AE20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B5D0AC20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib */; };
 		57B5D0B020BBE15B0011DE66 /* XYSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5D0AF20BBE15B0011DE66 /* XYSplitViewController.swift */; };
@@ -61,6 +63,8 @@
 		57840FB420B426180090A900 /* SplicePlateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplicePlateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57840FB820B426180090A900 /* SplicePlateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplicePlateUITests.swift; sourceTree = "<group>"; };
 		57840FBA20B426180090A900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B200B820C0E6A100F00DEE /* XYBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseNavigationViewController.swift; sourceTree = "<group>"; };
+		57B200BA20C0E70700F00DEE /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		57B5D0AB20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		57B5D0AC20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		57B5D0AF20BBE15B0011DE66 /* XYSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYSplitViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		570CC3D220BD2730000504D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				57B200BA20C0E70700F00DEE /* UIImageExtension.swift */,
 				57B5D0AB20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift */,
 				57B5D0AC20BBD1A00011DE66 /* XYPhotoCollectionViewCell.xib */,
 				57B5D0B120BBE2040011DE66 /* XYSplitCollectionViewCell.swift */,
@@ -124,6 +129,7 @@
 				57840F9A20B426150090A900 /* ViewController.swift */,
 				57B5D0AF20BBE15B0011DE66 /* XYSplitViewController.swift */,
 				57F1878120BD5D0A0057B817 /* XYPreviewViewController.swift */,
+				57B200B820C0E6A100F00DEE /* XYBaseNavigationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 				TargetAttributes = {
 					57840F9420B426150090A900 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					57840FA820B426170090A900 = {
 						CreatedOnToolsVersion = 9.3;
@@ -339,15 +346,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SplicePlate/Pods-SplicePlate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/ZLPhotoBrowser/ZLPhotoBrowser.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLPhotoBrowser.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -382,6 +391,8 @@
 				57840F9B20B426150090A900 /* ViewController.swift in Sources */,
 				570CC3D620BD2783000504D2 /* XYSplitImageModel.swift in Sources */,
 				57B5D0B320BBE2040011DE66 /* XYSplitCollectionViewCell.swift in Sources */,
+				57B200BB20C0E70700F00DEE /* UIImageExtension.swift in Sources */,
+				57B200B920C0E6A100F00DEE /* XYBaseNavigationViewController.swift in Sources */,
 				57F1878220BD5D0A0057B817 /* XYPreviewViewController.swift in Sources */,
 				5719C6B620BE3C5F00AA6C23 /* XYImageTableViewCell.swift in Sources */,
 				57B5D0AD20BBD1A00011DE66 /* XYPhotoCollectionViewCell.swift in Sources */,
@@ -560,18 +571,22 @@
 			baseConfigurationReference = B1D14D2F499552F4EB534796 /* Pods-SplicePlate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MZD3465LC;
 				INFOPLIST_FILE = SplicePlate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.SplicePlate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -580,18 +595,21 @@
 			baseConfigurationReference = 8F6DBF70CF0DB74C03430AED /* Pods-SplicePlate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MZD3465LC;
 				INFOPLIST_FILE = SplicePlate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.SplicePlate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
